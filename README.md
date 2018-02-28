@@ -1,6 +1,6 @@
 # 微信公众号文章剪报
 
-clip wechat document to html
+# 根据公众号文章的地址，剪出文章内容并保存为本地静态页面（含图片和样式）。
 
 ## Usage
 ``

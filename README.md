@@ -1,8 +1,10 @@
 # 微信公众号文章剪报
 
+clip wechat document to html
+
 ## Usage
 ``
-node clip.js [url]
+node clip.js [your wechat document url]
 ``
 
 ## Example

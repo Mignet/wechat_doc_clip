@@ -1,0 +1,28 @@
+{
+  "name": "wx-clip",
+  "version": "1.0.0",
+  "description": "wechat platform clip",
+  "main": "clip.js",
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "mkdirp": "^0.5.1",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node clip.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mignet/wechat_doc_clip.git"
+  },
+  "keywords": [
+    "wechat"
+  ],
+  "author": "Mignet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mignet/wechat_doc_clip/issues"
+  },
+  "homepage": "https://github.com/Mignet/wechat_doc_clip#readme"
+}

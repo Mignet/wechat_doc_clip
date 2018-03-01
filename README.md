@@ -20,7 +20,7 @@ OorP5B.html and images/OorP5B/xxx
 
 ## Next
 
-convert html to pdf
+you can convert html to pdf as follows:
 
 ``
 npm install -g html-pdf

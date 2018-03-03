@@ -4,6 +4,7 @@ var request = require('request');
 var _ = require('lodash');
 
 var url;
+//html-pdf tool needs absolute path for image or css file
 var abs_file_path = ('file:///'+__dirname).replace(new RegExp(/\\/g),'/')
 
 if (process.argv.length > 2) {
@@ -44,10 +45,16 @@ request.get({
     body = body.substr(body.indexOf('js_article')-9,body.indexOf('first_sceen__time')-12-body.indexOf('js_article')+9)+'</script></div></div></div></div>';
     body = '<meta charset="utf-8">\n<link rel="stylesheet" type="text/css" href="'+abs_file_path+'/wx.css">\n' + body;
 
-    fs.writeFile('./'+biz+'.html',body,{encoding:'utf-8'});
+    fs.writeFile('./'+biz+'.html',body,{encoding:'utf-8'},(err) => {
+	  if (err) throw err;
+	  console.log('The html has been saved!');
+	});
 
-    fs.writeFile('./hash.txt',biz,{encoding:'utf-8'});
-    //download file
+    /*fs.writeFile('./hash.txt',biz,{encoding:'utf-8'},(err) => {
+	  if (err) throw err;
+	  console.log('The hash has been saved!');
+	});*/
+    //download files
 
     mkdirp('images/' + biz, function(err) {
       if (err) {

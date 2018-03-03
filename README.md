@@ -4,20 +4,22 @@
 
 使用步骤
 
-> 1. 下载安装NodeJs
-> 2. 下载代码zip并解压
-> 3. cmd到解压目录
+> 1. 下载安装[NodeJS](https://nodejs.org/en/)
+> 2. 下载[代码zip](https://github.com/Mignet/wechat_doc_clip/archive/master.zip)并解压
+> 3. 命令行切换到解压目录
 > 4. 执行npm install，自动下载依赖
-> 5. 执行node clip.js 'http://mp.weixin.qq.com/s/HolMqSOS1C3GBFRFZz3oyQ' (换成你想抓取的文章地址)
-> 6. 如果想把html转换成pdf，可以使用html-pdf
+> 5. 执行node clip.js 'http://mp.weixin.qq.com/s/HolMqSOS1C3GBFRFZz3oyQ' (想抓取的文章地址)
+> 6. 成功生成本地文件OorP5B.html和图片文件夹images/OorP5B/xxx。
 
-html-pdf使用
-> 7. 安装npm install -g html-pdf
+如果想把html转换成pdf，可以使用工具html-pdf
+
+html-pdf的使用
+> 7. 安装npm install html-pdf
 > 8. html-pdf OorP5B.html(输入文件) OorP5B.pdf(输出文件)
 
 ## Usage
 ``
-node clip.js [your wechat document url]
+node clip.js [wechat document url]
 ``
 
 ## Example

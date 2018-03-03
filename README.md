@@ -14,8 +14,8 @@
 如果想把html转换成pdf，可以使用工具html-pdf
 
 html-pdf的使用
-> 7. 安装npm install html-pdf
-> 8. html-pdf OorP5B.html(输入文件) OorP5B.pdf(输出文件)
+> 7. 安装: npm install html-pdf
+> 8. 执行: html-pdf OorP5B.html(输入文件) OorP5B.pdf(输出文件)
 
 ## Usage
 ``
